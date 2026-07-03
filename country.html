@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Country Details | Atlas Explorer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">🌍 Atlas Explorer</a>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <a href="index.html" class="breadcrumb-link" style="color:#a9b6c4;">← Back to all countries</a>
+    <h1>Country Details</h1>
+  </div>
+</section>
+
+<main>
+  <section class="section">
+    <div class="container">
+
+      <div id="errorBox" class="error-box" hidden>
+        <p id="errorMsg"></p>
+        <a href="index.html" class="btn btn-primary">Back to Home</a>
+      </div>
+
+      <article id="detailHero" hidden>
+
+        <div class="detail-hero">
+          <figure class="detail-flag">
+            <img id="heroFlag" src="" alt="" />
+            <figcaption class="detail-caption">
+              <span class="region-badge" id="heroRegion"></span>
+              <h1 id="heroName"></h1>
+              <p id="heroNative"></p>
+            </figcaption>
+            <button id="favBtn" class="detail-fav-btn" aria-label="Toggle favorite">🤍</button>
+          </figure>
+
+          <aside class="info-panel">
+            <p id="blurb"></p>
+            <div class="tag-row">
+              <span class="tag" id="tagRegion"></span>
+              <span class="tag" id="tagDemonym" hidden></span>
+            </div>
+            <a id="mapsLink" class="btn btn-ghost map-link" target="_blank" rel="noopener">📍 Open in Google Maps</a>
+          </aside>
+        </div>
+
+        <section>
+          <div class="section-head">
+            <h2>Key Statistics</h2>
+          </div>
+          <div class="stats-grid" id="statsGrid"></div>
+        </section>
+
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="margin-bottom:.8rem;">🌍 Atlas Explorer</a>
+        <p>A simple, living guide to the world's countries.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Data</h4>
+        <ul>
+          <li><a href="https://countries.dev" target="_blank" rel="noopener">countries.dev</a></li>
+          <li><a href="https://flagcdn.com" target="_blank" rel="noopener">flagcdn.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <time datetime="2026">2026</time> Atlas Explorer. Final frontend project, for learning purposes.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" role="dialog" aria-label="Cookie notice">
+  <p>This site fetches country data from a free public API. Favorites are stored only in your browser — nothing is sent anywhere else.</p>
+  <button class="btn btn-primary cookie-accept">Got it</button>
+</div>
+
+<button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="js/common.js"></script>
+<script src="js/country.js"></script>
+</body>
+</html>

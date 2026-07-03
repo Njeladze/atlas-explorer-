@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About | Atlas Explorer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">🌍 Atlas Explorer</a>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>About Atlas Explorer</h1>
+    <p>A small, honest guide to how this project works.</p>
+  </div>
+</section>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <article class="about-body reveal" style="max-width:700px; margin:0 auto;">
+
+        <p>Atlas Explorer is a final frontend project — a simple way to look up any country's capital, region, population and a few key facts, all in one place.</p>
+
+        <section>
+          <h2>Where the data comes from</h2>
+          <p>Two free, public APIs power this site — no account or key needed to browse:</p>
+          <ul class="credit-list" style="margin-top:1rem;">
+            <li><span>Country details</span><span class="value">countries.dev</span></li>
+            <li><span>Flag images</span><span class="value">flagcdn.com</span></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Search, filter & sort</h2>
+          <p>On the homepage you can type to search by country or capital name, use the region dropdown to narrow results down to one part of the world, and sort the list by name, population or area — all three update the grid instantly, and can be combined together.</p>
+        </section>
+
+        <section>
+          <h2>How Favorites work</h2>
+          <p>Tapping the heart icon on any country card saves it to your browser's <code>localStorage</code> — nothing is sent to a server. Your list stays on your device and is still there next time you visit.</p>
+        </section>
+
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="margin-bottom:.8rem;">🌍 Atlas Explorer</a>
+        <p>A simple, living guide to the world's countries.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Data</h4>
+        <ul>
+          <li><a href="https://countries.dev" target="_blank" rel="noopener">countries.dev</a></li>
+          <li><a href="https://flagcdn.com" target="_blank" rel="noopener">flagcdn.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <time datetime="2026">2026</time> Atlas Explorer. Final frontend project, for learning purposes.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" role="dialog" aria-label="Cookie notice">
+  <p>This site fetches country data from a free public API. Favorites are stored only in your browser — nothing is sent anywhere else.</p>
+  <button class="btn btn-primary cookie-accept">Got it</button>
+</div>
+
+<button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

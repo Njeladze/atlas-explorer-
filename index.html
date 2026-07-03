@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Atlas Explorer | World Countries Guide</title>
+<meta name="description" content="Search and explore every country on Earth — capital, region and population, sourced live from a free public API." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">🌍 Atlas Explorer</a>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Explore the World</h1>
+      <p>A simple guide to every nation on Earth — search by name or capital, filter by region, and save your favorites.</p>
+
+      <div class="search-panel">
+        <div class="search-box">
+          <span class="icon">🔍</span>
+          <input id="searchInput" type="text" placeholder="Search for a country or capital..." aria-label="Search countries" />
+        </div>
+
+        <select id="regionSelect" class="region-select" aria-label="Filter by region">
+          <option value="all">All regions</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">Americas</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="results-meta" id="resultsMeta">Loading countries...</p>
+
+        <div class="sort-group">
+          <label for="sortSelect">Sort by</label>
+          <select id="sortSelect" class="sort-select">
+            <option value="name-asc">Name (A–Z)</option>
+            <option value="population-desc">Population (high to low)</option>
+            <option value="population-asc">Population (low to high)</option>
+            <option value="area-desc">Area (largest first)</option>
+            <option value="area-asc">Area (smallest first)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="country-grid" id="countryGrid"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="margin-bottom:.8rem;">🌍 Atlas Explorer</a>
+        <p>A simple, living guide to the world's countries.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Data</h4>
+        <ul>
+          <li><a href="https://countries.dev" target="_blank" rel="noopener">countries.dev</a></li>
+          <li><a href="https://flagcdn.com" target="_blank" rel="noopener">flagcdn.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <time datetime="2026">2026</time> Atlas Explorer. Final frontend project, for learning purposes.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" role="dialog" aria-label="Cookie notice">
+  <p>This site fetches country data from a free public API. Favorites are stored only in your browser — nothing is sent anywhere else.</p>
+  <button class="btn btn-primary cookie-accept">Got it</button>
+</div>
+
+<button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
