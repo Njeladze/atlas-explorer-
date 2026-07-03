@@ -7,4 +7,3 @@
 მონაცემები მოდის [countries.dev](https://countries.dev/) API-დან, დროშები — [flagcdn.com](https://flagcdn.com/)-იდან. სუფთა HTML/CSS/JS-ზეა დაწერილი, ბიბლიოთეკებისა და framework-ების გარეშე (გარდა ScrollReveal-ისა, სექციების ანიმაციისთვის).
 
 
-Live: `https://njeladze.github.io/atlas-explorer-/`
